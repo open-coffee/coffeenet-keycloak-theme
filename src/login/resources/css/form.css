@@ -1,0 +1,113 @@
+.form-container {
+  @apply mx-auto;
+  @apply max-w-md;
+  @apply p-4;
+  @apply bg-coffeenet-dark;
+}
+
+.form-alert {
+  @apply text-center;
+  @apply mb-8;
+}
+
+.form-alert-error {
+  @apply text-red-600;
+}
+
+.form-image-container {
+  @apply mb-8;
+  @apply pt-2;
+}
+
+.form-image-container > svg {
+  @apply mx-auto;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+.form-group ~ .form-actions-container {
+  @apply mt-8;
+}
+
+.form-label {
+  @apply block;
+  @apply text-coffeenet-lighter;
+  @apply mb-1;
+  @apply pr-4;
+  @apply font-light;
+}
+
+.form-invalid-feedback {
+  @apply text-red-600;
+  @apply text-sm;
+}
+
+.form-input {
+  @apply py-1;
+  @apply px-2;
+  @apply w-full;
+}
+
+.form-input--invalid {
+  @apply border-red-600;
+}
+
+.form-actions-container {
+  @apply text-right;
+  @apply flex;
+  @apply flex-col;
+}
+
+@screen sm {
+  .form-actions-container {
+    @apply flex-row;
+    @apply items-center;
+    @apply justify-end;
+  }
+}
+
+.button-submit {
+  @apply inline-block;
+  @apply bg-coffeenet-light;
+  @apply text-blue-100;
+  @apply px-4;
+  @apply py-2;
+  @apply font-light;
+  @apply w-full;
+  @apply flex;
+  @apply justify-center;
+}
+
+@screen sm {
+  .button-submit {
+    @apply w-auto;
+    @apply inline-block;
+  }
+}
+
+.button-cancel {
+  @apply text-sm;
+  @apply text-orange-900;
+}
+
+.button-cancel:hover {
+  @apply underline;
+}
+
+@screen md {
+  .form-group {
+    @apply flex;
+    @apply items-baseline;
+  }
+
+  .form-label-container {
+    @apply w-2/5;
+    @apply text-right;
+  }
+
+  .form-input-container {
+    @apply w-3/5;
+  }
+}
