@@ -1,5 +1,5 @@
 .form-container {
-  @apply mx-auto max-w-md p-4;
+  @apply mx-auto max-w-80;
 }
 
 .form-alert {
@@ -11,15 +11,19 @@
 }
 
 .form-image-container {
-  @apply mb-8 pt-2;
+  @apply mb-8;
 }
 
 .form-image-container > svg {
-  @apply mx-auto;
+  @apply mx-auto max-w-25;
 }
 
 .form-group {
   @apply mb-4;
+}
+
+.form-actions-container {
+  @apply text-right flex flex-col;
 }
 
 .form-group ~ .form-actions-container {
@@ -42,24 +46,8 @@
   @apply border-red-600;
 }
 
-.form-actions-container {
-  @apply text-right flex flex-col;
-}
-
-@screen sm {
-  .form-actions-container {
-    @apply flex-row items-center justify-end;
-  }
-}
-
 .button-submit {
   @apply inline-block bg-coffeenet-light text-blue-100 px-4 py-2 font-light w-full flex justify-center;
-}
-
-@screen sm {
-  .button-submit {
-    @apply w-auto inline-block;
-  }
 }
 
 .button-cancel {
@@ -71,6 +59,10 @@
 }
 
 @screen md {
+  .form-container {
+    @apply max-w-35;
+  }
+
   .form-group {
     @apply flex items-baseline;
   }
@@ -81,5 +73,27 @@
 
   .form-input-container {
     @apply w-3/5;
+  }
+
+  .form-image-container > svg {
+    @apply max-w-20;
+  }
+
+  .form-actions-container {
+    @apply flex-row items-center justify-end;
+  }
+
+  .button-submit {
+    @apply w-auto inline-block;
+  }
+}
+
+@screen xl {
+  .form-container {
+    @apply max-w-25;
+  }
+
+  .form-image-container > svg {
+    @apply max-w-10;
   }
 }
