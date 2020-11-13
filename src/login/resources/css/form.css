@@ -1,13 +1,9 @@
 .form-container {
-  @apply mx-auto;
-  @apply max-w-md;
-  @apply p-4;
-  @apply bg-coffeenet-dark;
+  @apply mx-auto max-w-md p-4;
 }
 
 .form-alert {
-  @apply text-center;
-  @apply mb-8;
+  @apply text-center mb-8;
 }
 
 .form-alert-error {
@@ -15,8 +11,7 @@
 }
 
 .form-image-container {
-  @apply mb-8;
-  @apply pt-2;
+  @apply mb-8 pt-2;
 }
 
 .form-image-container > svg {
@@ -32,22 +27,15 @@
 }
 
 .form-label {
-  @apply block;
-  @apply text-coffeenet-lighter;
-  @apply mb-1;
-  @apply pr-4;
-  @apply font-light;
+  @apply block text-coffeenet-lighter mb-1 pr-4 font-light;
 }
 
 .form-invalid-feedback {
-  @apply text-red-600;
-  @apply text-sm;
+  @apply text-red-600 text-sm;
 }
 
 .form-input {
-  @apply py-1;
-  @apply px-2;
-  @apply w-full;
+  @apply py-1 px-2 w-full;
 }
 
 .form-input--invalid {
@@ -55,41 +43,27 @@
 }
 
 .form-actions-container {
-  @apply text-right;
-  @apply flex;
-  @apply flex-col;
+  @apply text-right flex flex-col;
 }
 
 @screen sm {
   .form-actions-container {
-    @apply flex-row;
-    @apply items-center;
-    @apply justify-end;
+    @apply flex-row items-center justify-end;
   }
 }
 
 .button-submit {
-  @apply inline-block;
-  @apply bg-coffeenet-light;
-  @apply text-blue-100;
-  @apply px-4;
-  @apply py-2;
-  @apply font-light;
-  @apply w-full;
-  @apply flex;
-  @apply justify-center;
+  @apply inline-block bg-coffeenet-light text-blue-100 px-4 py-2 font-light w-full flex justify-center;
 }
 
 @screen sm {
   .button-submit {
-    @apply w-auto;
-    @apply inline-block;
+    @apply w-auto inline-block;
   }
 }
 
 .button-cancel {
-  @apply text-sm;
-  @apply text-orange-900;
+  @apply text-sm text-orange-900;
 }
 
 .button-cancel:hover {
@@ -98,13 +72,11 @@
 
 @screen md {
   .form-group {
-    @apply flex;
-    @apply items-baseline;
+    @apply flex items-baseline;
   }
 
   .form-label-container {
-    @apply w-2/5;
-    @apply text-right;
+    @apply w-2/5 text-right;
   }
 
   .form-input-container {

@@ -4,5 +4,6 @@
 
 body {
   @apply pb-12;
-  @apply bg-white;
+
+  background: radial-gradient(circle, #eed5b3 0%, #eac699 60%) 0 50%;
 }
