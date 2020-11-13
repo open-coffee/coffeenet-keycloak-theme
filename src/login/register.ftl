@@ -7,7 +7,7 @@
             <div class="form-container">
                 <div class="form-image-container">
                     <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                         viewBox="0 0 298.9 415.5" xml:space="preserve" role="presentation" width="128px">
+                         viewBox="0 0 298.9 415.5" xml:space="preserve" role="presentation">
                                 <style>.st0 {
                                         fill: #ffffff;
                                     }</style>
