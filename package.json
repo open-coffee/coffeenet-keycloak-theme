@@ -13,8 +13,8 @@
   "author": "Tobias Schneider",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -23,7 +23,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-terser": "^2.0.0",
     "postcss": "^8.1.8",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
     "stylelint": "^13.7.2",
