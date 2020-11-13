@@ -11,11 +11,11 @@
 }
 
 .form-image-container {
-  @apply mb-8;
+  @apply mb-8 text-coffeenet-primary;
 }
 
 .form-image-container > svg {
-  @apply mx-auto max-w-25;
+  @apply mx-auto max-w-25 fill-current;
 }
 
 .form-group {
@@ -89,10 +89,6 @@
 }
 
 @screen xl {
-  .form-container {
-    @apply max-w-25;
-  }
-
   .form-image-container > svg {
     @apply max-w-10;
   }

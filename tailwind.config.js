@@ -9,8 +9,10 @@ module.exports = {
       colors: {
         coffeenet: {
           lighter: "#c4c4c4",
-          light: "#9E9E9E",
+          light: "#9e9e9e",
           dark: "#404042",
+          primary: "#7d4c32",
+          orange: "#f29b1f",
         },
       },
       maxWidth: {
