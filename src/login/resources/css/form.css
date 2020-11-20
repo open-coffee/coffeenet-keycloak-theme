@@ -35,7 +35,11 @@
 }
 
 .form-input {
-  @apply py-1 px-2 w-full;
+  @apply py-1 px-2 w-full border border-solid border-coffeenet-grey;
+}
+
+.form-input:focus {
+  @apply border-blue-500 outline-none shadow-inner;
 }
 
 .form-input--invalid {

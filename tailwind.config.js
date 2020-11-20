@@ -5,6 +5,10 @@ module.exports = {
       lg: "992px",
       xl: "1200px",
     },
+    boxShadow: {
+      inner:
+        "inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6)",
+    },
     extend: {
       colors: {
         coffeenet: {
@@ -15,6 +19,12 @@ module.exports = {
           orange: "#f29b1f",
         },
       },
+      borderColor: (theme) => ({
+        default: theme("colors.gray.300", "currentColor"),
+        coffeenet: {
+          grey: "#ccc",
+        },
+      }),
       maxWidth: {
         10: "10vw",
         20: "20vw",
@@ -26,5 +36,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  purge: false
+  purge: false,
 };
