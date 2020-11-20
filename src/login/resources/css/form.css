@@ -11,27 +11,23 @@
 }
 
 .form-image-container {
-  @apply mb-8 text-coffeenet-primary;
+  @apply text-coffeenet-primary;
 }
 
 .form-image-container > svg {
   @apply mx-auto max-w-25 fill-current;
 }
 
-.form-group {
-  @apply mb-4;
+.form-group > input {
+  @apply mb-2;
 }
 
 .form-actions-container {
   @apply text-right flex flex-col;
 }
 
-.form-group ~ .form-actions-container {
-  @apply mt-8;
-}
-
 .form-label {
-  @apply block text-coffeenet-lighter mb-1 pr-4 font-light;
+  @apply hidden text-coffeenet-lighter mb-1 pr-4 font-light;
 }
 
 .form-invalid-feedback {
@@ -60,15 +56,7 @@
 
 @screen md {
   .form-container {
-    @apply max-w-35;
-  }
-
-  .form-group {
-    @apply flex items-baseline;
-  }
-
-  .form-label-container {
-    @apply w-2/5 text-right;
+    @apply max-w-25;
   }
 
   .form-input-container {
@@ -79,16 +67,16 @@
     @apply max-w-20;
   }
 
-  .form-actions-container {
-    @apply flex-row items-center justify-end;
-  }
-
   .button-submit {
     @apply w-auto inline-block;
   }
 }
 
 @screen xl {
+  .form-container {
+    @apply max-w-20;
+  }
+
   .form-image-container > svg {
     @apply max-w-10;
   }
