@@ -85,12 +85,12 @@
 
             <div id="kc-form-buttons" class="form-actions-container">
               <#if realm.resetPasswordAllowed>
-                <a href="${url.loginResetCredentialsUrl}"
-                   class="bg-coffeenet-primary text-sm order-last sm:order-none mt-2 sm:mt-0 sm:mr-4 hover:underline text-blue-800">
+              <a href="${url.loginResetCredentialsUrl}"
+                   class="hover:underline mt-2 order-last text-sm text text-coffeenet-primary;">
                   ${msg("doForgotPassword")}
                 </a>
               </#if>
-              <button class="bg-coffeenet-primary" type="submit" id="kc-login" name="login" class="button-submit">
+              <button type="submit" id="kc-login" name="login" class="button-submit">
                 ${msg("doLogIn")}
               </button>
             </div>
