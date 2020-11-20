@@ -58,6 +58,37 @@
   @apply underline;
 }
 
+.password-error {
+  animation: coffeenet--login-shake 0.4s ease-in-out;
+  animation-delay: 0.25s;
+}
+
+@keyframes coffeenet--login-shake {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  20% {
+    transform: rotateZ(-10deg);
+  }
+
+  40% {
+    transform: rotateZ(10deg);
+  }
+
+  60% {
+    transform: rotateZ(-10deg);
+  }
+
+  80% {
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
 @screen md {
   .form-container {
     @apply max-w-25;

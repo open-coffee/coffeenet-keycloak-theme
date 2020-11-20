@@ -8,7 +8,11 @@
         <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}"
               method="post">
           <div class="form-container">
+          <#if message?? && message?has_content && (message.type == 'error' || !isAppInitiatedAction??)>
+            <div class="form-image-container password-error">
+          <#else>
             <div class="form-image-container">
+          </#if>
               <svg class="fill-current" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
                    viewBox="0 0 298.9 415.5" xml:space="preserve" role="presentation">
                 <g id="coffeenet-cup">
@@ -20,7 +24,7 @@
 
             <div class="form-group">
               <svg class="fill-current mb-2" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                   x="0" y="0" viewBox="0 0 325.6 95.2" xml:space="preserve">
+                  x="0" y="0" viewBox="0 0 325.6 95.2" xml:space="preserve">
                 <style>
                   .st4 {
                     fill: #f3bc7e
@@ -43,8 +47,8 @@
                         d="M275.8 24.4c.9.2 1.7.7 2.2 1.4.7.8 1.3 1.8 1.7 2.8.4.8.5 1.8.4 2.7-.2.8-.7 1.1-1.8 1-.7-.1-1.5-.2-2.2-.4-.6-.2-1.3-.4-2.1-.6-.8-.2-1.9-.5-3.2-.8s-3.1-.6-5.3-.9c-2.8 4.2-5.6 8.7-8.2 13.5s-5 9.5-7 14.1c-1.9 4.2-3.6 8.5-4.9 12.9-1.1 3.2-1.7 6.6-1.9 10 0 .7.1 1.1.3 1.2.2.1.3.4.3.9s-.3.7-1 .5c-.8-.2-1.6-.5-2.3-1-.9-.7-1.7-1.5-2.3-2.5-.7-1.2-1.1-2.5-1-3.9.1-3.3.7-6.6 1.7-9.8 1.2-4.1 2.7-8.1 4.4-12 1.8-4.2 3.8-8.5 6-12.8s4.5-8.4 6.8-12.1c-3.8-.4-7-.6-9.7-.8s-4.9-.3-6.6-.4-3-.1-3.9-.1c-.6 0-1.2 0-1.8-.1-.3 0-.6-.1-.9-.2-.2-.2-.4-.3-.5-.4-.2-.2-.3-.4-.4-.6 0-.3.8-.6 2.5-.8s3.7-.4 6.3-.5 5.4-.3 8.5-.4 6.3-.2 9.3-.2c1.2-1.9 2.5-3.8 3.9-5.6 1.2-1.7 2.4-3.1 3.5-4.4.9-1 1.9-2 2.9-2.9.6-.6 1.3-.9 2.1-1 1.8 0 3.5.7 4.7 2 .5.4.8 1 1 1.6.2.4.2.9-.1 1.2-1.2 1.2-2.5 2.6-3.8 4.1s-2.6 3.3-3.9 5.1h3.8c.8.1 1.7.1 2.5.2z"/>
                   <g id="logo_coffeenet">
                     <ellipse transform="rotate(-9.201 306.645 10.565)" class="text-coffeenet-primary" cx="306.7"
-                             cy="10.6" rx="8.2"
-                             ry="10.6"/>
+                            cy="10.6" rx="8.2"
+                            ry="10.6"/>
                     <path d="M307.9 18.4s4-1.9.3-6.5c-3-3.7-3.5-6.3-2.3-9.2 0 0-5.5 4.6.8 10.9 2.5 3 1.2 4.8 1.2 4.8z"
                           fill="#f3f2f3"/>
                     <path d="M308.6 21.1c4.5-.7 7.4-5.9 6.5-11.7-.4-3.1-2-5.9-4.5-7.8 1.9 2.4 2.6 5.6 2.1 8.6-.3 2.9-2.4 5.4-5.2 6.2-2 .5-4.1.6-6.2.3-.3 0-.6-.1-.9-.3 1.9 3.3 5 5.2 8.2 4.7z"
@@ -56,8 +60,8 @@
                     <path id="_Pfad_" class="st4"
                           d="M292.5 12.6c-5.1 4.4 11.4 3.8 16.8 1.1-11.8 2.6-18.8 1.2-16.8-1.1z"/>
                     <ellipse transform="matrix(.9955 -.09515 .09515 .9955 1.004 30.417)" class="text-coffeenet-primary"
-                             cx="319.4"
-                             cy="4.7" rx="2.2" ry="1.6"/>
+                            cx="319.4"
+                            cy="4.7" rx="2.2" ry="1.6"/>
                     <path d="M317.7 5.3s.6.7 1.3-.3c.3-.6 1-1 1.7-1 0 0-1.2-.8-2.1.8-.4.7-.9.5-.9.5z" fill="#fff"/>
                   </g>
                 </g>
