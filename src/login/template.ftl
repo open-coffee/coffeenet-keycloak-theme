@@ -13,7 +13,7 @@
         </#list>
     </#if>
     <title>${msg("loginTitle",(realm.displayName!''))}</title>
-    <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="${url.resourcesPath}/img/favicon.ico" />
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
             <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
@@ -45,10 +45,6 @@
         </ul>
     </div>
 </#if>
-
-<h1 id="kc-page-title" class="text-3xl font-semibold mt-8 mb-6 text-center">
-  ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
-</h1>
 
 <#nested "form">
 

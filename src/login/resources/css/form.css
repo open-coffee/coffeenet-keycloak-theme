@@ -1,5 +1,5 @@
 .form-container {
-  @apply mx-auto max-w-80;
+  @apply mt-8 mx-auto max-w-80;
 }
 
 .form-alert {
