@@ -1,6 +1,6 @@
 {
   "name": "coffeenet-keycloak-theme",
-  "version": "0.1.0",
+  "private": true,
   "description": "Custom Keycloak theme for the CoffeeNet",
   "scripts": {
     "prebuild": "rm -rf dist",
