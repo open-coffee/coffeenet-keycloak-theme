@@ -16,7 +16,7 @@ The pipeline creates a docker container available in [this repository container 
 
 At first build the theme once
 ```bash
-npm run install && npm run build
+npm install && npm run build
 ```
 
 Start a local keycloak instance with this theme and configuration mounted:
