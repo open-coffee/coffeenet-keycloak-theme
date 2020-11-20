@@ -16,6 +16,7 @@ module.exports = {
           light: "#9e9e9e",
           dark: "#404042",
           primary: "#7d4c32",
+          seconday: "#eac699",
           orange: "#f29b1f",
         },
       },
@@ -23,6 +24,7 @@ module.exports = {
         default: theme("colors.gray.300", "currentColor"),
         coffeenet: {
           grey: "#ccc",
+          seconday: "#eac699",
         },
       }),
       maxWidth: {

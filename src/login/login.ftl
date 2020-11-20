@@ -18,12 +18,6 @@
               </svg>
             </div>
 
-            <#if message?? && message?has_content && (message.type == 'error' || !isAppInitiatedAction??)>
-              <div class="form-alert<#if message.type == 'error'> form-alert-error</#if>">
-                ${kcSanitize(message.summary)?no_esc}
-              </div>
-            </#if>
-
             <div class="form-group">
               <svg class="fill-current mb-2" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    x="0" y="0" viewBox="0 0 325.6 95.2" xml:space="preserve">
@@ -68,6 +62,13 @@
                   </g>
                 </g>
               </svg>
+
+            <#if message?? && message?has_content && (message.type == 'error' || !isAppInitiatedAction??)>
+              <div class="form-alert<#if message.type == 'error'> form-alert-error</#if>">
+                ${kcSanitize(message.summary)?no_esc}
+              </div>
+            </#if>
+
               <label for="username"
                      class="form-label"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
               <#if usernameEditDisabled??>

@@ -3,11 +3,11 @@
 }
 
 .form-alert {
-  @apply text-center mb-8;
+  @apply p-4 mb-4 border-transparent border-solid border-0;
 }
 
 .form-alert-error {
-  @apply text-red-600;
+  @apply text-coffeenet-primary bg-coffeenet-seconday border-coffeenet-seconday;
 }
 
 .form-image-container {
