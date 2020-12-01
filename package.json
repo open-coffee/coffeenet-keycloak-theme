@@ -22,7 +22,7 @@
     "gulp-cli": "^2.3.0",
     "gulp-postcss": "^9.0.0",
     "gulp-terser": "^2.0.0",
-    "postcss": "^8.1.8",
+    "postcss": "^8.1.10",
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
