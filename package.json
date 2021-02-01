@@ -21,7 +21,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.3.0",
     "gulp-postcss": "^9.0.0",
-    "gulp-terser": "^2.0.0",
+    "gulp-terser": "^2.0.1",
     "postcss": "^8.2.2",
     "tailwindcss": "^1.9.6"
   },
