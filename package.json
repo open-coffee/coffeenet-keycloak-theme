@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-env": "^7.13.12",
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
